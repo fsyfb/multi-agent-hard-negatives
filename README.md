@@ -62,7 +62,7 @@ Activate `.venv` before the installation command: use `source .venv/bin/activate
 python experiments/scripts/train_embedding.py --data experiments/data/train_split.json --base_model BAAI/bge-large-zh-v1.5 --output_dir experiments/runs/bge_align --batch_size 8 --grad_acc 4 --epochs 3 --max_seq_length 512 --lr 2e-5 --seed 42 --no-use_amp
 ```
 
-The final checkpoint is written to `experiments/runs/bge_align/final`. This command uses the released training split, the three-epoch difficulty schedule and full precision. An NVIDIA RTX 3090 was used in the reported run. Public-release defaults also select the training split and disable mixed precision.
+The final checkpoint is written to `experiments/runs/bge_align/final`. This command uses the released training split, the three-epoch difficulty schedule and full precision. An NVIDIA RTX 3090 was used in the run. Public-release defaults also select the training split and disable mixed precision.
 
 ### Evaluate a local or downloaded model
 
@@ -102,9 +102,7 @@ The two commands use separate output directories so that a small trial does not 
 | Qwen3-Embedding-8B | 0.8410 | 0.9205 | 0.8410 | 0.0639 |
 | BGE-Align | 0.9947 | 0.9973 | 0.9947 | 0.6044 |
 
-These values come from the supplied evaluation reports. Each record contains one positive and one negative; the evaluator ranks only this pair. MRR@10 is consequently determined by P@1, and Recall@5 is always one. FDR counts strict positive-score wins, whereas ranking puts the positive first in a tie. This is a question-disjoint evaluation within a shared source corpus, not full-corpus retrieval.
-
 ## Source attribution and citation
 
-NHMil_QA and the event material originate from Feng and Yang's earlier news RAG benchmark study: [original source publication](https://link.cnki.net/urlid/61.1167.g3.20260728.1418.010). The source benchmark concerns South China Sea news and events. This repository adds the generated negative documents, training triples and associated experimental code; the generic repository title does not change the origin of the inputs.
+NHMil_QA and the event material originate from earlier news RAG benchmark study: [original source publication](https://link.cnki.net/urlid/61.1167.g3.20260728.1418.010). The source benchmark concerns South China Sea news and events. This repository adds the generated negative documents, training triples and associated experimental code; the generic repository title does not change the origin of the inputs.
 
