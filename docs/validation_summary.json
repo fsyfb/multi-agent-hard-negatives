@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "checksummed_files": 8,
+  "datasets": {
+    "train_dataset.json": {
+      "records": 11325,
+      "identifiers": 3775,
+      "observed_difficulty": {
+        "Medium": 1719,
+        "Hard": 6330,
+        "Easy": 3276
+      },
+      "recorded_task_categories": {
+        "Reasoning": 3384,
+        "Temporal": 5301,
+        "Factual": 1464,
+        "Temporal_Spatial": 699,
+        "Spatial": 477
+      }
+    },
+    "train_split.json": {
+      "records": 9627,
+      "identifiers": 3209,
+      "observed_difficulty": {
+        "Easy": 2779,
+        "Hard": 5376,
+        "Medium": 1472
+      },
+      "recorded_task_categories": {
+        "Temporal": 4518,
+        "Reasoning": 2868,
+        "Factual": 1236,
+        "Spatial": 402,
+        "Temporal_Spatial": 603
+      }
+    },
+    "eval_split.json": {
+      "records": 1698,
+      "identifiers": 566,
+      "observed_difficulty": {
+        "Medium": 247,
+        "Hard": 954,
+        "Easy": 497
+      },
+      "recorded_task_categories": {
+        "Temporal": 783,
+        "Reasoning": 516,
+        "Factual": 228,
+        "Temporal_Spatial": 96,
+        "Spatial": 75
+      }
+    }
+  },
+  "train_eval_identifier_overlap": 0,
+  "eval_questions_sharing_a_training_positive": 546,
+  "target_hits": 8042,
+  "split_reconstruction": "exact record and ordering match",
+  "model_or_api_execution": false,
+  "git_line_ending_preservation": "passed for all 8 checksummed files",
+  "synthetic_and_configuration_tests": "5 tests passed; no model inference",
+  "original_data_and_result_bytes": "8 files identical to supplied materials"
+}
