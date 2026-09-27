@@ -1,6 +1,6 @@
 # Multi-agent hard negative construction
 
-Code, data and reported evaluation results for **Multi-agent hard negative construction for evidence retrieval in complex news question answering**, by Shuyang Feng and Haiping Yang, School of Information Management, Nanjing University.
+Code, data and reported evaluation results for **Multi-agent hard negative construction for evidence retrieval in complex news question answering**
 
 The workflow constructs negative documents by changing answer-supporting conditions while retaining the surrounding context. Candidate generation, two-model similarity feedback, rule screening and semantic verification are coordinated to produce retrieval training triples.
 
