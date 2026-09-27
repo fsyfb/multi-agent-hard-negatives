@@ -108,4 +108,3 @@ These values come from the supplied evaluation reports. Each record contains one
 
 NHMil_QA and the event material originate from Feng and Yang's earlier news RAG benchmark study: [original source publication](https://link.cnki.net/urlid/61.1167.g3.20260728.1418.010). The source benchmark concerns South China Sea news and events. This repository adds the generated negative documents, training triples and associated experimental code; the generic repository title does not change the origin of the inputs.
 
-For the method, cite the manuscript title and authors given above. A publication DOI can be added when available. See [NOTICE.md](NOTICE.md) for attribution and reuse information.
