@@ -1,0 +1,59 @@
+{
+  "model": "BAAI/bge-large-zh-v1.5",
+  "metrics": {
+    "num_cases": 1698,
+    "recall_at_1": 0.8421672555948174,
+    "recall_at_5": 1.0,
+    "mrr": 0.9210836277974087,
+    "fdr": 0.8421672555948174,
+    "avg_margin": 0.05857833782902033,
+    "by_difficulty": {
+      "Easy": {
+        "num_cases": 497,
+        "recall_at_1": 0.9014084507042254,
+        "recall_at_5": 1.0,
+        "mrr": 0.9507042253521126,
+        "fdr": 0.9014084507042254,
+        "avg_margin": 0.1122753142231187
+      },
+      "Hard": {
+        "num_cases": 954,
+        "recall_at_1": 0.8029350104821803,
+        "recall_at_5": 1.0,
+        "mrr": 0.9014675052410901,
+        "fdr": 0.8029350104821803,
+        "avg_margin": 0.027293636301528482
+      },
+      "Medium": {
+        "num_cases": 247,
+        "recall_at_1": 0.8744939271255061,
+        "recall_at_5": 1.0,
+        "mrr": 0.937246963562753,
+        "fdr": 0.8744939271255061,
+        "avg_margin": 0.0713646049924225
+      }
+    },
+    "axis_fdr": {
+      "Factual": {
+        "num_pairs": 228,
+        "fdr": 0.9035087719298246
+      },
+      "Reasoning": {
+        "num_pairs": 516,
+        "fdr": 0.7945736434108527
+      },
+      "Spatial": {
+        "num_pairs": 75,
+        "fdr": 0.8133333333333334
+      },
+      "Temporal": {
+        "num_pairs": 783,
+        "fdr": 0.859514687100894
+      },
+      "Temporal_Spatial": {
+        "num_pairs": 96,
+        "fdr": 0.8333333333333334
+      }
+    }
+  }
+}

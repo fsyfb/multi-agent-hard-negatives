@@ -1,0 +1,59 @@
+{
+  "model": "qwen/qwen3-embedding-8b",
+  "metrics": {
+    "num_cases": 1698,
+    "recall_at_1": 0.8409893992932862,
+    "recall_at_5": 1.0,
+    "mrr": 0.9204946996466431,
+    "fdr": 0.8409893992932862,
+    "avg_margin": 0.06388608110877735,
+    "by_difficulty": {
+      "Easy": {
+        "num_cases": 497,
+        "recall_at_1": 0.9014084507042254,
+        "recall_at_5": 1.0,
+        "mrr": 0.9507042253521126,
+        "fdr": 0.9014084507042254,
+        "avg_margin": 0.12387784982711017
+      },
+      "Hard": {
+        "num_cases": 954,
+        "recall_at_1": 0.8039832285115304,
+        "recall_at_5": 1.0,
+        "mrr": 0.9019916142557652,
+        "fdr": 0.8039832285115304,
+        "avg_margin": 0.028734626057137985
+      },
+      "Medium": {
+        "num_cases": 247,
+        "recall_at_1": 0.8623481781376519,
+        "recall_at_5": 1.0,
+        "mrr": 0.9311740890688259,
+        "fdr": 0.8623481781376519,
+        "avg_margin": 0.07894105708550828
+      }
+    },
+    "axis_fdr": {
+      "Factual": {
+        "num_cases": 228,
+        "fdr": 0.881578947368421
+      },
+      "Reasoning": {
+        "num_cases": 516,
+        "fdr": 0.7790697674418605
+      },
+      "Spatial": {
+        "num_cases": 75,
+        "fdr": 0.7733333333333333
+      },
+      "Temporal": {
+        "num_cases": 783,
+        "fdr": 0.8659003831417624
+      },
+      "Temporal_Spatial": {
+        "num_cases": 96,
+        "fdr": 0.9270833333333334
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "model": "runs\\bge_nanhai_align_final\\final",
+  "metrics": {
+    "num_cases": 1698,
+    "recall_at_1": 0.9946996466431095,
+    "recall_at_5": 1.0,
+    "mrr": 0.9973498233215548,
+    "fdr": 0.9946996466431095,
+    "avg_margin": 0.6043543810620234,
+    "by_difficulty": {
+      "Easy": {
+        "num_cases": 497,
+        "recall_at_1": 0.993963782696177,
+        "recall_at_5": 1.0,
+        "mrr": 0.9969818913480886,
+        "fdr": 0.993963782696177,
+        "avg_margin": 0.7124112391529579
+      },
+      "Hard": {
+        "num_cases": 954,
+        "recall_at_1": 0.9937106918238994,
+        "recall_at_5": 1.0,
+        "mrr": 0.9968553459119497,
+        "fdr": 0.9937106918238994,
+        "avg_margin": 0.5330730915717308
+      },
+      "Medium": {
+        "num_cases": 247,
+        "recall_at_1": 1.0,
+        "recall_at_5": 1.0,
+        "mrr": 1.0,
+        "fdr": 1.0,
+        "avg_margin": 0.6622413920035005
+      }
+    },
+    "axis_fdr": {
+      "Factual": {
+        "num_cases": 228,
+        "fdr": 0.9912280701754386
+      },
+      "Reasoning": {
+        "num_cases": 516,
+        "fdr": 0.9961240310077519
+      },
+      "Spatial": {
+        "num_cases": 75,
+        "fdr": 1.0
+      },
+      "Temporal": {
+        "num_cases": 783,
+        "fdr": 0.9936143039591315
+      },
+      "Temporal_Spatial": {
+        "num_cases": 96,
+        "fdr": 1.0
+      }
+    }
+  }
+}
